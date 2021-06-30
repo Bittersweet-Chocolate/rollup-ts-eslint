@@ -1,0 +1,27 @@
+{
+  "editor.snippetSuggestions": "top",
+  // 保存自动格式化
+  "editor.formatOnPaste": true,
+  "eslint.run": "onSave",
+  // 重新设定tabsize
+  "editor.tabSize": 4,
+  "prettier.tabWidth": 4, // 缩进字节数
+  // #每次保存的时候自动格式化 
+  "editor.formatOnSave": true,
+  // #每次保存的时候将代码按eslint格式进行修复 ,"eslint.autoFixOnSave": true 这个已经过时了
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.validate": [ //确定校验准则
+    "javascript",
+    "javascriptreact",
+    "html",
+    "typescript",
+    "typescriptreact"
+  ],
+  //  #默认是true加上分号，false是在有些容易出问题的地方（ASI failures）首部加分号
+  //  详细请看https://prettier.io/docs/en/rationale.html#semicolons
+  "prettier.semi": false,
+  //  #使用单引号替代双引号,不生效就是eslint做了限制
+  "prettier.singleQuote": false,
+}

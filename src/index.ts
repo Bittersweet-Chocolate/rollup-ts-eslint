@@ -1,15 +1,15 @@
 /*
  * @Author: czh
  * @Date: 2021-06-30 23:11:01
- * @LastEditTime: 2021-06-30 23:12:39
+ * @LastEditTime: 2021-07-01 00:08:50
  * @LastEditors: czh
  * @Description:
  */
 
 function init(): any {
-  return;
+	return '123'
 }
 
-const platformSDK = init();
+// const platformSDK = init()
 
-export default platformSDK;
+export default init()
