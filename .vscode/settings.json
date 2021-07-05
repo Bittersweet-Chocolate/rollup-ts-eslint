@@ -4,9 +4,9 @@
   "editor.formatOnPaste": true,
   "eslint.run": "onSave",
   // 重新设定tabsize
-  "editor.tabSize": 4,
-  "prettier.tabWidth": 4, // 缩进字节数
-  // #每次保存的时候自动格式化 
+  "editor.tabSize": 2,
+  "prettier.tabWidth": 2, // 缩进字节数
+  // #每次保存的时候自动格式化
   "editor.formatOnSave": true,
   // #每次保存的时候将代码按eslint格式进行修复 ,"eslint.autoFixOnSave": true 这个已经过时了
   "editor.codeActionsOnSave": {

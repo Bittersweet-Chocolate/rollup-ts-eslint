@@ -1,23 +1,21 @@
 /*
  * @Author: zihao.chen
  * @Date: 2021-06-23 15:47:58
- * @LastEditors: zihao.chen
- * @LastEditTime: 2021-06-30 19:26:01
- * @Description: 
+ * @LastEditors: czh
+ * @LastEditTime: 2021-07-05 23:58:33
+ * @Description:
  */
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import eslint from '@rollup/plugin-eslint'
 import ts from 'rollup-plugin-typescript2'
+import { terser } from 'rollup-plugin-terser'
 import babel from 'rollup-plugin-babel';
 import serve from 'rollup-plugin-serve';
 import path from 'path'
-const extensions = [
-  '.js',
-  '.ts',
-  '.tsx'
-]
 
+const extensions = ['.js', '.ts', '.tsx']
+const isDev = process.env.NODE_ENV !== 'production'
 
 export default {
   input: './src/index.ts',
@@ -28,6 +26,7 @@ export default {
     sourcemap: true
   },
   plugins: [
+		!isDev && terser(),
     resolve({
       extensions
     }),
